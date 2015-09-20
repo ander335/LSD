@@ -1,7 +1,7 @@
-﻿  Sorter_Sorter.cpp
-  main.cpp
-     Создается библиотека D:\Project\LSD\JNI\NativeCode\x64\Release\NativeCode.lib и объект D:\Project\LSD\JNI\NativeCode\x64\Release\NativeCode.exp
+﻿     Создается библиотека D:\Project\LSD\JNI\NativeCode\x64\Release\NativeCode.lib и объект D:\Project\LSD\JNI\NativeCode\x64\Release\NativeCode.exp
   Создание кода
-  All 6 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  8 of 18 functions (44.4%) were compiled, the rest were copied from previous compilation.
+    7 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
   Создание кода завершено
   NativeCode.vcxproj -> D:\Project\LSD\JNI\NativeCode\x64\Release\NativeCode.exe

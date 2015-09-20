@@ -9,10 +9,18 @@ extern "C" {
 #endif
 /*
  * Class:     Sorter_Sorter
- * Method:    SortC
+ * Method:    NativeLSD
  * Signature: ([I)V
  */
-JNIEXPORT void JNICALL Java_Sorter_Sorter_SortC
+JNIEXPORT void JNICALL Java_Sorter_Sorter_NativeLSD
+  (JNIEnv *, jclass, jintArray);
+
+/*
+ * Class:     Sorter_Sorter
+ * Method:    NativeQuick
+ * Signature: ([I)V
+ */
+JNIEXPORT void JNICALL Java_Sorter_Sorter_NativeQuick
   (JNIEnv *, jclass, jintArray);
 
 #ifdef __cplusplus

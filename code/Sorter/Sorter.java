@@ -5,12 +5,14 @@ import java.util.Arrays;
 public final class Sorter {
 	private Sorter() {};
 	
-	public static native void SortC(int[] mass);
+	public static native void NativeLSD(int[] mass);
+	public static native void NativeQuick(int[] mass);
 	
-	public static void SortJava(int[] mass) {
-		final int maxOrder = 9;
-		int[] chars = new int[10];
-		int[] position = new int[10];
+	public static void LSD(int[] mass) {
+		final int maxOrder = 1;
+		final int countChars = 1 << 16;
+		
+		int[] chars = new int[countChars];
 		int[] tmpMass = new int[mass.length];
 		
 		for (int order = 0; order <= maxOrder; ++order) {
@@ -19,13 +21,14 @@ public final class Sorter {
 				chars[GetChar(val, order)]++;
 			}
 			
-			position[0] = 0;
-			for (int i = 1; i < 10; ++i) {
-				position[i] = chars[i - 1] + position[i - 1];
+			for (int i = 0, pos = 0; i < countChars; ++i) {
+				int tmp = chars[i];
+				chars[i] = pos;
+				pos += tmp;
 			}
 			
 			for (int val : mass) {
-				tmpMass[position[GetChar(val, order)]++] = val;
+				tmpMass[chars[GetChar(val, order)]++] = val;
 			}
 			
 			System.arraycopy(tmpMass, 0, mass, 0, mass.length);
@@ -33,12 +36,6 @@ public final class Sorter {
 	}
 	
 	private static int GetChar(int val, int idx) {
-		int divider = 1;
-		
-		while (idx-- > 0) {
-			divider *= 10;
-		}
-		
-		return (val / divider) % 10;
+		return (val >> (16 * idx)) & 0xFFFF;
 	}
 }
