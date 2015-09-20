@@ -1,0 +1,1 @@
+xcopy /Y ..\x64\Release\Sorter_Sorter.dll ..\..\..\

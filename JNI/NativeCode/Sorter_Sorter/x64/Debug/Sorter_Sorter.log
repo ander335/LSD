@@ -1,0 +1,11 @@
+﻿Сборка начата 20.09.2015 15:58:33.
+     1>Проект "D:\Project\LSD\JNI\NativeCode\Sorter_Sorter\Sorter_Sorter.vcxproj" в узле 3 (целевые объекты Rebuild).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _WINDOWS /D _USRDLL /D SORTER_SORTER_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt ..\..\..\code\Sorter\Sorter_Sorter.cpp
+         Sorter_Sorter.cpp
+     1>d:\project\lsd\code\sorter\sorter_sorter.h(2): fatal error C1083: Не удается открыть файл включение: jni.h: No such file or directory
+     1>Сборка проекта "D:\Project\LSD\JNI\NativeCode\Sorter_Sorter\Sorter_Sorter.vcxproj" завершена (целевые объекты Rebuild) с ошибкой.
+
+Ошибка сборки.
+
+Затраченное время: 00:00:00.77
